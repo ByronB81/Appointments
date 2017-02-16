@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Apppointments</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Make an Appointment!</h1>
+      <div id="appt">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name: </label>
+            <input id="name" type="text">
+          </div>
+          <div class="form-group">
+            <label for="desc">Description of Appointment: </label>
+            <input id="desc" type="text">
+          </div>
+          <div class="form-group">
+            <label for="date">Date of Appointment: </label>
+            <input id="date" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="startTime">Start Time: </label>
+            <input id="startTime" type="text">
+          </div>
+          <div class="form-group">
+            <label for="endTime">End Time: </label>
+            <input id="endTime" type="text">
+          </div>
+
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
+      <div class="receipt">
+        <p><span class="nameOutput"></span>, your appointment for <span class="descOutput"></span> has been set for <span class="dateOutput"></span>. Your appointment will begin at <span class="startTimeOutput"></span> and ends at <span class="endTimeOutput"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
